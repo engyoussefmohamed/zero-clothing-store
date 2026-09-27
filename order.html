@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zero - الطلب</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav>
+    <button class="hamburger" aria-label="فتح القائمة">&#9776;</button>
+    <ul class="nav-menu">
+        <li><a href="index.html">home</a></li>
+        <li><a href="shop.html">shop</a></li>
+        <li><a href="order.html">order</a></li>
+        <li><a href="about.html">about us</a></li>
+    </ul>
+</nav>
+
+    <div class="container">
+        <h1>اطلب منتجاتك</h1>
+    <div class="alert" id="success-message">تم إرسال الطلب بنجاح!</div>
+<form action="#" method="post" id="order-form" data-user="true">
+    <label for="name">الاسم:</label>
+    <input type="text" id="name" name="name" required aria-required="true">
+    
+    <label for="email">البريد الإلكتروني:</label>
+    <input type="email" id="email" name="email" required aria-required="true">
+    
+    <label for="product">المنتج:</label>
+    <select id="product" name="product" aria-required="true">
+        <option value="قميص أبيض">قميص أبيض</option>
+        <option value="جينز أزرق">جينز أزرق</option>
+        <option value="بنطال رسمي">بنطال رسمي</option>
+        <option value="فستان أحمر">فستان أحمر</option>
+    </select>
+    
+    <label for="quantity">الكمية:</label>
+    <input type="number" id="quantity" name="quantity" min="1" required aria-required="true">
+    
+    <label for="address">العنوان:</label>
+    <textarea id="address" name="address" required aria-required="true"></textarea>
+    
+    <button type="submit">إرسال الطلب</button>
+</form>
+</div>
+    </div>
+
+<footer>
+    <p>طرق التواصل:</p>
+    <div class="social-links">
+        <a href="tel:+201153306833" aria-label="الاتصال بنا">📞 +201153306833</a>
+        <a href="mailto:youssefabdelnabi27@gmail.com" aria-label="إرسال بريد إلكتروني">✉️ youssefabdelnabi27@gmail.com</a>
+        <a href="#" aria-label="زيارة موقعنا">📍 العاشر من رمضان</a>
+        <a href="#" aria-label="صفحة فيسبوك">📘 Facebook</a>
+        <a href="#" aria-label="صفحة إنستغرام">📷 Instagram</a>
+    </div>
+    <p><a href="about.html">عننا</a></p>
+    <script src="script.js"></script>
+</footer>
+</body>
+</html>
